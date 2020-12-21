@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    max-width: 375px;
+    margin: 0;
+}
+
+header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #3DB2EF;
+    color: white;
+    text-align: center;
+    width: 90%;
+    max-width: 375px;
+    min-width: 300px;
+}
+
+
+/* Style the form */
+
+#regForm {
+    align-self: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 375px;
+    min-width: 300px;
+}
+
+#regForm h2 {
+    font-size: 2rem;
+    border-bottom: 4px solid #ccc;
+    color: #3DB2EF;
+    margin: 0 0 1rem 0;
+}
+
+#regForm button {
+    font: inherit;
+    font-size: 20px;
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid #FDD75A;
+    background-color: #FDD75A;
+    color: #3DB2EF;
+    border-radius: 20px;
+    padding: 0.5rem 0.75rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+#regForm button:focus {
+    outline: none;
+}
+
+#regForm button:hover,
+#regForm button:active {
+    background-color: #3DB2EF;
+    border-color: #3DB2EF;
+    color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+#regForm #nextBtn {
+    margin: 20px 5px 20px 30px;
+}
+
+#regForm #prevBtn {
+    margin: 20px 0px 20px 0px;
+}
+
+#regForm select {
+    font: inherit;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 0.5rem;
+}
+
+#regForm option {
+    color: black;
+    background-color: #dddddd;
+}
+
+#regForm textarea {
+    resize: none;
+    font-family: Raleway;
+    border-width: 2px;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 240px;
+}
+
+#regForm textarea:focus {
+    border-radius: 15px;
+    border-color: #0f6d74;
+    background-color: #d7f7fd;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+
+/* Style the input fields */
+
+#regForm p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#regForm input {
+    font: inherit;
+    font-size: 17px;
+    border-radius: 25px;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+    max-width: 240px;
+}
+
+#regForm input:focus {
+    outline: none;
+    border: 1px solid #0f6d74;
+    background-color: #d7f7fd;
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+}
+
+#regForm #mapContainer {
+    height: 200px;
+    width: 240px;
+    margin: 0;
+    padding: 0;
+}
+
+#regForm #map {
+    height: 100%;
+    width: 240px;
+}
+
+button#usePresentLocation {
+    font-size: 16px;
+    width: 100%;
+    color: white;
+    background-color: #00ca3d;
+    border: none;
+    margin-top: 10px;
+    max-width: 240px;
+}
+
+button#chooseLocation {
+    font-size: 16px;
+    width: 100%;
+    color: white;
+    background-color: #949494;
+    border: none;
+    margin-top: 10px;
+    max-width: 240px;
+}
+
+
+/* Mark input boxes that gets an error on validation: */
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+#password_not_match {
+    display: none;
+}
+
+
+/* Hide all steps by default: */
+
+.tab {
+    display: none;
+}
+
+
+/* Make circles that indicate the steps of the form: */
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+
+/* Mark the active step: */
+
+.step.active {
+    opacity: 1;
+}
+
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+    background-color: #54cfcf;
+}
